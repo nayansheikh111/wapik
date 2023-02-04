@@ -1,0 +1,418 @@
+
+$primary-color: #0f5f5cd2;
+$secend-color: #6FB048;
+$therd-color: #ffffff;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    color: $primary-color ;    
+}
+// Website loader Viwe Css Start
+.loader-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-color: #042429;
+    z-index: 99999999999999999;
+
+    
+  }
+  .loader-box .loader{
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-15% , -50%);
+      
+  }
+// Website loader Viwe Css End
+/*===========================
+Scrool Bar CSS Start
+=============================*/
+html {
+    --scrollbarBG: #ecdede;
+    --thumbBG: #0f5f5cd2;
+  }
+  body::-webkit-scrollbar {
+    width: 15px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+/*===========================
+Scrool Bar CSS End
+=============================*/
+// Common Css
+.header_bottom_shape_style{
+    background: $secend-color;
+    height: 2px;
+    width: 70px;
+    display: block;
+    
+}
+        // Custom Button CSS Start
+
+// btn_custom_one
+.btn_custom_one{
+    color: #fff !important;
+    background-color: #6FB048;
+    border-radius: 2px;
+    padding: 5px 25px;
+
+}
+.btn_custom_one:hover {
+    background-color: #83a7a5;
+  }
+.btn_custom_one:focus, .btn_custom.focus {
+    outline: 0;
+    box-shadow: none;
+  }
+// btn_custom_two
+  .btn_custom_two{
+    color: #fff !important;
+    background-color: #83a7a5;
+    border-radius: 2px;
+    padding: 5px 25px;
+
+}
+.btn_custom_two:hover {
+    background-color: #6FB048;
+  }
+.btn_custom_two:focus, .btn_custom.focus {
+    outline: 0;
+    box-shadow: none;
+  }
+          // Custom Button CSS End
+
+// Common Css
+
+// Header Section Css Start
+#headerArea{
+    color: #fff;
+    background-image: url(../img/header_section_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;                
+    min-height: 500px;     
+    position: relative;    
+    z-index: 1;
+
+    .row{
+        align-items: center;
+        min-height: 500px;
+    }    
+
+// overlay
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $primary-color;
+        z-index: -1;
+    }
+}
+
+.fixed-top{
+    background-color: #0f5f5c;
+}
+
+
+// Header Section Css Start
+// Navbar Css Start
+.navbar{
+    .navbar-brand{
+        font-weight: 700;
+        .navbar_number{
+            font-size: .7rem;
+            font-weight: 600;
+            border-left: 1px solid #fff;
+            // margin-left: 15px;
+            // padding-left: 15px;
+            img{
+                width: 15px;
+            }
+        }
+    }
+    
+}
+
+// Navbar media
+@media (min-width: 992px){
+    .navbar-expand-lg{
+        .navbar-nav{
+            .nav-item{
+                
+                .nav-link{
+                    color: #fff;
+                    padding-right: .75rem;
+                    padding-left: .75rem;
+                }
+            }
+        }
+    }
+
+}
+        // Nav Section End
+
+
+// Feature Section Css Start
+#feature_section{
+    .row{
+        .feature_header{
+            h2{
+                font-weight: 400;
+            }
+        }
+        .col{
+            h3{
+                font-size: 1.15rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .child_feature_area{
+            .child_feature{
+               .child_feature_header{
+                li{
+                    h3{
+                        font-size: 1rem;
+                    }
+                }
+               }
+            p{
+                   font-size: .8rem;
+               }
+            }
+        
+    }
+}
+// Feature Section Css End
+
+// App Section Css Start
+#app_section{
+    background: url(../img/app/app.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    max-height: 660px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+// App Section Css End
+
+// Profile Section Css Start
+#profile_section{
+    h3{
+        font-size: 1.37rem;
+        font-weight: 400;
+        color: #83a7a5;
+    }
+    p{
+        margin: 0;
+        font-size: .87rem;
+    }
+    .profile_client_name{
+        color: $secend-color;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+    .profile_img{
+        img{
+            max-width: 400px;
+            margin-left: 3rem;
+           
+        }
+    }
+}
+
+// Profile Section Css End
+
+// Globle Section Css Start
+#global_section{
+    background:url(../img/global/global_bg.png);
+    background-size: cover;
+    background-position: -100px 0;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .row{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        .col{
+           
+            h3{
+                color: 0f5f5c;
+                // font-size: 2rem;
+                font-weight: 400;
+            }
+            p{
+                color: #83a7a5;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+// Globle Section Css End
+
+// Price & Plan Section CssPrice & Plan
+#price_plan_section{    
+    h3{
+        font-weight: 400;
+    }
+    .price_plan_row{
+        .price_plan{
+            border: 1px solid #D0DEDC;
+        ul{
+            li{
+                line-height: 2rem;
+                p{
+                    margin: 0;
+                    font-size: 0.93rem;
+                    font-weight: 700;
+                    color: $secend-color;
+                }
+                h4{
+                    font-size: 4rem;
+                    font-weight: 600;
+                    margin: 0;
+                    strong{
+                        font-size: 0.875rem;
+                        font-weight: 700;
+                        margin-top: -5px;
+                        display: block;
+                    }
+                }
+                
+            }
+        }
+           
+        }
+        .plus_plan{
+            border-left: none;
+            border-right: none;
+        }
+        .plans{
+            h4{
+                font-weight: 400;
+            }
+        }
+    }
+    
+}
+// Price & Plan Section Css End
+
+// Price & Plan Section Css Start
+#help_section{
+    .row{
+        .col{
+            h4{
+                color: $secend-color;
+            }
+            a{
+                font-weight: 700;
+                color: $primary-color;
+            }
+        }
+    }
+}
+// Price & Plan Section Css End
+
+// Download Section Css Start
+#download_section{
+    background: url(../img/app/app_download_section_bg.png);
+}
+// Download Section Css End
+
+// Footer Section Css Start
+#footer_section{
+    .row{
+        .col{
+            h5{
+                font-size: 1.375rem;
+                font-weight: 700;
+                margin: 0;
+            }
+            ul{
+                li{
+                    
+                    a{
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                    .website_link{
+                        font-weight: 700;
+                    }
+                }
+            }
+            form{
+                .input-group{
+                    input{
+                        border: 0;
+                        padding: 10px 15px;
+                        height: auto;                        
+                        background-color: #eef1ec;
+                        
+                    }
+                    
+                    .input-group-prepend{
+                        .input-group-text{
+                            padding: 0;
+                            background-color: #eef1ec;
+                            border: 0;
+                            button{
+                                padding: 10px 15px;
+                                border: 0;
+                                background-color: #eef1ec;
+                                outline: none;
+                                
+                                svg{                          
+                                width:18px;
+                                height:auto;    
+                                fill:$secend-color;                  
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .copyright_aria{
+        border-top: 1px solid $primary-color;
+        p{
+            font-size: .75rem;
+        }
+        ul{
+            li{
+                width: 30px;
+                margin: 5px;
+            }
+        }
+    }
+}
+// Footer Section Css End
+
